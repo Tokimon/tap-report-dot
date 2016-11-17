@@ -1,3 +1,5 @@
+'use strict';
+
 const through = require('through2');
 const parser = require('tap-parser');
 const duplexer = require('duplexer');
