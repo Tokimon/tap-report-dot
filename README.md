@@ -1,4 +1,4 @@
-# tap-report-dot
+# tap-reporter-dot
 
 Formatted TAP output with dots ...
 
@@ -19,28 +19,15 @@ so I switched the TAP parser to [tap-parser](https://github.com/tapjs/tap-parser
 ## Install
 
 ```
-npm install tap-report-dot --save-dev
+npm install tap-reporter-dot --save-dev
 ```
 
 ## Usage
 
-**package.json**
-
-```json
-{
-  "name": "module-name",
-  "scripts": {
-    "test": "node ./test/tap-test.js | tap-report-dot"
-  }
-}
-```
-
-Then run with `npm test`
-
-**Streaming**
+### Streaming
 
 ```js
-const dot = require('tap-report-dot');
+const dot = require('tap-reporter-dot');
 const tape = require('tape'); // Or another TAP reporter
 
 tape.createStream()
@@ -48,15 +35,30 @@ tape.createStream()
   .pipe(process.stdout);
 ```
 
+### CLI
+
+**package.json**
+
+```json
+{
+  "name": "module-name",
+  "scripts": {
+    "test": "node ./test/tap-test.js | tap-reporter-dot"
+  }
+}
+```
+
+Then run with `npm test`
+
 **Terminal**
 
 ```
-tape test/index.js | node_modules/.bin/tap-report-dot
+tape test/index.js | node_modules/.bin/tap-reporter-dot
 ```
 
 **Testling**
 
 ```
 npm install testling -g
-testling test/index.js | node_modules/.bin/tap-report-dot
+testling test/index.js | node_modules/.bin/tap-reporter-dot
 ```
