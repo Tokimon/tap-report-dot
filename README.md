@@ -3,9 +3,10 @@
 Formatted TAP output with dots ...
 
 **NOTE**
+
 Originaly forked from the excellent [tap-dot](https://github.com/scottcorgan/tap-dot) by [scottcorgan](https://github.com/scottcorgan),
-but [`tap-out`](https://github.com/scottcorgan/tap-out) doesn't work properly with in-script streams,
-so I switched the TAP parser to [`tap-parser`](https://github.com/tapjs/tap-parser)
+but the [tap-out](https://github.com/scottcorgan/tap-out) parser doesn't work properly with in-script streams,
+so I switched the TAP parser to [tap-parser](https://github.com/tapjs/tap-parser)
 
 **Passed tests**
 
