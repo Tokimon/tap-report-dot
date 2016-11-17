@@ -1,0 +1,36 @@
+{
+  "name": "tap-report-dot",
+  "version": "1.0.0",
+  "description": "Formatted TAP output with dots ...",
+  "main": "./bin/dot-pipe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottcorgan/tap-dot.git"
+  },
+  "keywords": [
+    "tap",
+    "reporter",
+    "tape",
+    "test"
+  ],
+  "author": "Toke Voltelen",
+  "contributors": ["Scott Corgan"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tokimon/tap-report-dot/issues"
+  },
+  "homepage": "https://github.com/Tokimon/tap-report-dot",
+  "bin": {
+    "tap-dot": "bin/dot.js",
+    "tap-report-dot": "bin/dot.js"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "duplexer": "^0.1.1",
+    "tap-parser": "^3.0.3",
+    "through2": "^2.0.1"
+  }
+}
