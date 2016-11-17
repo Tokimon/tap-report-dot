@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const dot = require('./dot-pipe')();
+const dot = require('../')();
 
 process.stdin
   .pipe(dot)
