@@ -1,6 +1,6 @@
 {
   "name": "tap-reporter-dot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Formatted TAP output with dots ...",
   "main": "./bin/dot.js",
   "repository": {
@@ -14,7 +14,9 @@
     "test"
   ],
   "author": "Toke Voltelen",
-  "contributors": ["Scott Corgan"],
+  "contributors": [
+    "Scott Corgan"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Tokimon/tap-reporter-dot/issues"
